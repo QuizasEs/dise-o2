@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const images = Array.from(slideContent.querySelectorAll('img'));
     const originalNum = images.length;
 
-    // Duplicate images multiple times for seamless infinite loop
     for (let i = 0; i < 4; i++) {
         images.forEach(img => {
             const clone = img.cloneNode(true);
@@ -11,17 +10,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Calculate width of one set of images
     const allImages = slideContent.querySelectorAll('img');
     let widthOfOneSet = 0;
     for(let i = 0; i < originalNum; i++) {
         widthOfOneSet += allImages[i].offsetWidth + 10;
     }
-    widthOfOneSet -= 10; // subtract last gap
+    widthOfOneSet -= 10;
 
-    // Continuous slide animation without visible reset
     let currentTranslate = 0;
-    const speed = 0.5; // px per frame
+    const speed = 0.5; 
     let isPaused = false;
 
     function animate() {
@@ -36,13 +33,27 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     animate();
 
-    // Pause animation on scroll for better UX
     let scrollTimeout;
     window.addEventListener('scroll', function() {
         isPaused = true;
         clearTimeout(scrollTimeout);
         scrollTimeout = setTimeout(() => {
             isPaused = false;
-        }, 10); // Resume after 1 second of no scrolling
+        }, 10); 
     });
+
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.slide-up').forEach(el => observer.observe(el));
 });
