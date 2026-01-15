@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -8,66 +7,56 @@
 }
 
 :root {
-    /* ============================================
-     COLORES (extraídos del Tailwind config)
-     ============================================ */
 
-    /* Colores Principales */
+
+
     --primary: #FFB300;
-    /* Amber 600 - Split Complement 1 (Yellow-Orange) */
-    --primary-hover: #FFCA28;
-    /* Amber 400 */
-    --secondary: #FF5722;
-    /* Deep Orange - Split Complement 2 (Red-Orange) */
 
-    /* Colores de Fondo */
+    --primary-hover: #FFCA28;
+
+    --secondary: #FF5722;
+
+
+
     --background-light: #f8fafc;
     --background-dark: #0B1120;
-    /* Deep Navy Blue (Base Color) */
-    --card-dark: #162032;
-    /* Lighter Navy */
 
-    /* Colores de Texto */
+    --card-dark: #162032;
+
+
+
     --text-subtle: #94a3b8;
 
-    /* Bordes */
+
     --border-dark: #233554;
 
-    /* Acentos */
-    --accent-blue: #3b82f6;
-    /* Keeping a blue accent for harmony */
 
-    /* ============================================
-     BORDER RADIUS (extraídos del Tailwind config)
-     ============================================ */
+    --accent-blue: #3b82f6;
+
+
+
 
     --radius-default: 0.25rem;
-    /* DEFAULT */
+
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --radius-full: 9999px;
 
-    /* ============================================
-     TIPOGRAFÍA (extraídas del código)
-     ============================================ */
 
-    /* Familias de Fuente */
+
+
     --font-display: 'Manrope', sans-serif;
     --font-body: 'Noto Sans', sans-serif;
 
-    /* ============================================
-     BACKGROUND IMAGES (del Tailwind config)
-     ============================================ */
+
 
     --hero-pattern: radial-gradient(circle at 50% 50%, rgba(11, 17, 32, 0.7) 0%, rgba(11, 17, 32, 1) 100%);
 
-    /* ============================================
-     COLORES ADICIONALES (usados en el HTML)
-     ============================================ */
 
-    /* Colores de Slate (usado en el diseño) */
+
+
     --slate-300: #cbd5e1;
     --slate-400: #94a3b8;
     --slate-500: #64748b;
@@ -76,25 +65,23 @@
     --slate-800: #1e293b;
     --slate-900: #0f172a;
 
-    /* Colores de Gray */
+
     --gray-300: #d1d5db;
     --gray-400: #9ca3af;
     --gray-500: #6b7280;
 
-    /* Colores adicionales usados */
+
     --green-500: #22c55e;
     --blue-600: #2563eb;
     --blue-900: #1e3a8a;
     --red-500: #ef4444;
 
-    /* Fondos específicos del diseño */
+
     --bg-header: rgba(11, 17, 32, 0.9);
     --bg-card-darker: #0e1525;
     --bg-header-bar: #111a2e;
 
-    /* ============================================
-     SOMBRAS (usadas en el diseño)
-     ============================================ */
+
 
     --shadow-primary: 0 0 15px rgba(255, 179, 0, 0.3);
     --shadow-primary-strong: 0 0 20px rgba(255, 179, 0, 0.4);
@@ -104,85 +91,77 @@
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
     --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
 
-    /* ============================================
-     TAMAÑOS DE TEXTO (usados en el HTML)
-     ============================================ */
+
 
     --text-xs: 0.75rem;
-    /* 12px - usado en badges y labels */
-    --text-sm: 0.875rem;
-    /* 14px - usado en nav y botones pequeños */
-    --text-base: 1rem;
-    /* 16px - usado en botones y texto base */
-    --text-lg: 1.125rem;
-    /* 18px - usado en subtítulos */
-    --text-xl: 1.25rem;
-    /* 20px - usado en títulos de sección */
-    --text-2xl: 1.5rem;
-    /* 24px - usado en títulos de cards */
-    --text-3xl: 1.875rem;
-    /* 30px */
-    --text-4xl: 2.25rem;
-    /* 36px - usado en títulos secundarios */
-    --text-5xl: 3rem;
-    /* 48px - usado en títulos principales */
-    --text-7xl: 4.5rem;
-    /* 72px - usado en hero heading */
 
-    /* ============================================
-     ESPACIADO (patrones del diseño)
-     ============================================ */
+    --text-sm: 0.875rem;
+
+    --text-base: 1rem;
+
+    --text-lg: 1.125rem;
+
+    --text-xl: 1.25rem;
+
+    --text-2xl: 1.5rem;
+
+    --text-3xl: 1.875rem;
+
+    --text-4xl: 2.25rem;
+
+    --text-5xl: 3rem;
+
+    --text-7xl: 4.5rem;
+
+
+
 
     --space-1: 0.25rem;
-    /* 4px */
+
     --space-2: 0.5rem;
-    /* 8px */
+
     --space-3: 0.75rem;
-    /* 12px */
+
     --space-4: 1rem;
-    /* 16px */
+
     --space-5: 1.25rem;
-    /* 20px */
+
     --space-6: 1.5rem;
-    /* 24px */
+
     --space-8: 2rem;
-    /* 32px */
+
     --space-10: 2.5rem;
-    /* 40px - altura del header */
+
     --space-12: 3rem;
-    /* 48px */
+
     --space-16: 4rem;
-    /* 64px */
+
     --space-20: 5rem;
-    /* 80px - altura del header completo */
+
     --space-24: 6rem;
-    /* 96px */
 
-    /* ============================================
-     DIMENSIONES (del diseño)
-     ============================================ */
 
-    /* Anchos máximos de contenedor */
+
+
+
     --container-lg: 1280px;
-    /* max-w-[1280px] usado en secciones */
+
     --container-xl: 1400px;
-    /* max-w-[1400px] usado en header */
 
-    /* Alturas específicas */
+
+
     --header-height: 5rem;
-    /* 80px - h-20 */
-    --icon-sm: 0.5rem;
-    /* 8px - w-2 h-2 */
-    --icon-base: 1rem;
-    /* 16px - w-4 h-4 */
-    --icon-lg: 2.5rem;
-    /* 40px - w-10 h-10 */
-    --icon-xl: 4rem;
-    /* 64px - w-16 h-16 */
 
-    /* ============================================
-     OPACIDADES (usadas en el diseño)
-     ============================================ */
+    --icon-sm: 0.5rem;
+
+    --icon-base: 1rem;
+
+    --icon-lg: 2.5rem;
+
+    --icon-xl: 4rem;
+
+
+
 
     --opacity-10: 0.1;
     --opacity-20: 0.2;
@@ -193,44 +172,36 @@
     --opacity-80: 0.8;
     --opacity-90: 0.9;
 
-    /* ============================================
-     BLUR (del diseño)
-     ============================================ */
+
 
     --blur-md: 12px;
-    /* backdrop-blur-md */
-    --blur-sm: 4px;
-    /* backdrop-blur-sm */
-    --blur-xl: 120px;
-    /* blur-[120px] usado en efectos de fondo */
 
-    /* ============================================
-     Z-INDEX (estructura del diseño)
-     ============================================ */
+    --blur-sm: 4px;
+
+    --blur-xl: 120px;
+
+
+
 
     --z-base: 0;
     --z-10: 10;
     --z-20: 20;
     --z-header: 50;
-    /* header fixed z-50 */
 
-    /* ============================================
-     TRANSICIONES
-     ============================================ */
+
+
 
     --transition-fast: 150ms;
     --transition-base: 300ms;
-    /* duration-300 */
+
     --transition-slow: 500ms;
-    /* duration-500 */
+
     --transition-slower: 700ms;
-    /* duration-700 */
+
 
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
 
-    /* ============================================
-     SCROLLBAR (del CSS custom)
-     ============================================ */
+
 
     --scrollbar-width: 8px;
     --scrollbar-track-bg: #0B1120;
@@ -238,9 +209,7 @@
     --scrollbar-thumb-hover-bg: #FFB300;
     --scrollbar-radius: 4px;
 
-    /* ============================================
-     GRADIENTES (del diseño)
-     ============================================ */
+
 
     --gradient-text: linear-gradient(to right, #FFB300, #FF5722);
     --gradient-hero-radial: radial-gradient(ellipse at top, rgba(30, 64, 175, 0.1), rgba(11, 17, 32, 1));
@@ -249,25 +218,19 @@
     --gradient-dark-overlay: linear-gradient(to top, #0e1525 0%, transparent 100%);
     --gradient-opacity-overlay: linear-gradient(to top, rgba(14, 21, 37, 1) 0%, transparent 100%);
 
-    /* ============================================
-     ASPECTOS Y FORMAS
-     ============================================ */
+
 
     --aspect-video: 16/9;
-    /* aspect-[16/9] usado en mockup */
 
-    /* ============================================
-     PESOS DE FUENTE (del diseño)
-     ============================================ */
+
+
 
     --font-semibold: 600;
     --font-bold: 700;
     --font-extrabold: 800;
     --font-black: 900;
 
-    /* ============================================
-     TRACKING (letter-spacing del diseño)
-     ============================================ */
+
 
     --tracking-tight: -0.025em;
     --tracking-wider: 0.05em;
@@ -356,6 +319,34 @@ nav ul li a:hover {
     transform: scale(1.03);
 }
 
+.menu-toggle {
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--primary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.hamburger-menu:hover {
+    color: var(--primary-hover);
+}
+
+.hamburger-menu ion-icon {
+    pointer-events: none;
+    transition: transform 0.3s ease;
+}
+
+#menu-toggle:checked~.hamburger-menu ion-icon {
+    transform: rotate(180deg);
+}
+
 
 main {
     flex: 1;
@@ -408,6 +399,8 @@ main {
 
 }
 
+
+
 .hero-texto-content span {
     color: var(--slate-300);
     font-size: var(--text-xl);
@@ -415,8 +408,12 @@ main {
     text-align: right;
     max-width: 800px;
     white-space: wrap;
+    text-transform: uppercase;
     padding: 20px;
+    text-shadow: 2px 2px black, -1px 1px black, 1px 1px black, 1px -1px black, 1px 1px black, 1px -1px black, 1px 1px black, 1px -1px black;
 }
+
+
 
 .hero-buttons {
     display: flex;
@@ -452,7 +449,8 @@ main {
 }
 
 .company-slide-container h3,
-.card-header h3, .title {
+.card-header h3,
+.title {
     padding: 30px;
     color: var(--primary);
     text-transform: uppercase;
@@ -488,6 +486,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .card-header {
@@ -531,106 +530,197 @@ main {
 
 .card-content {
     display: flex;
-    width: 100%;
-    max-width: 1200px;
-    gap: 20px;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 15px;
     align-items: center;
-}
-
-@keyframes show {
-    from {
-        opacity: 0;
-        scale: 80%;
-    }
-
-    to {
-        opacity: 1;
-        scale: 100%;
-    }
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .card-item {
-    view-timeline-name: --reveal;
-    animation-name: show;
-    animation-fill-mode: both;
-    display: flex;
-    width: 800px;
-    height: 230px;
-    background: var(--background-light);
-    gap: 10px;
-    border: 2px solid var(--border-dark);
+    width: 280px;
+    height: 350px;
     overflow: hidden;
-    border-radius: var(--radius-2xl);
-    transition: all 0.3s ease;
-    flex-direction: row;
+    border: 2px solid var(--blue-900);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 20px var(--primary);
+    transition: all .3s ease;
+    cursor: pointer;
+    background: var(--bg-card-darker);
+}
+
+
+.card-item:hover {
+    transform: translateY(30px);
+}
+
+.card-item:hover .item-header img {
+    transform: scale(1.1);
+}
+
+.item-header img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: all .3s ease;
+}
+
+.item-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 190px;
     justify-content: center;
-    align-items: center;
-    animation-timeline: --reveal;
+    padding: 10px;
+    overflow: hidden;
+
 }
 
-.item-left {
-    width: 50%;
-    padding-left: 30px;
+.item-title-header {
+    color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
 }
 
-.item-left h3 {
-    font-size: var(--text-2xl);
-    text-transform: uppercase;
+.item-title-header h3 {
+    font-size: var(--text-xl);
     font-weight: var(--font-bold);
+    text-transform: uppercase;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-bottom: 8px;
+}
+
+.item-title-header p {
+    color: green;
+    font-size: var(--text-subtle)
+}
+
+.item-check {
+    color: var(--slate-300);
+    text-transform: capitalize;
+    padding: 10px;
+
+}
+
+.item-check ion-icon {
     color: var(--primary);
 }
 
-.item-left p {
-    font-size: 1rem;
-    white-space: wrap;
-    color: var(--slate-800);
-    padding: 8px 0;
-
-}
-
-.item-left .item-check-block ion-icon {
-    color: var(--green-500);
-}
-
-.item-check-block {
+.btn.card {
+    width: fit-content;
+    border: 2px solid var(--primary);
+    border-radius: var(--radius-lg);
+    padding: 10px;
+    color: var(--primary);
+    box-shadow: var(--shadow-primary-strong);
+    text-decoration: none;
     text-transform: uppercase;
-    color: var(--slate-700);
-    font-weight: var(--font-lg);
+    font-weight: var(--font-bold);
+    transition: all 0.3s ease;
+    align-self: center;
 }
 
-.item-right {
-    width: 50%;
-    display:flex;
+.btn.card:hover {
+    background: var(--primary-hover);
+    color: var(--slate-900);
+    transform: scale(1.03);
 
 }
 
-.item-right img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    box-shadow: var(--shadow-secondary);
+
+@media (max-width: 730px) {
+    .hero-texto-content h2 {
+        font-size: var(--text-5xl);
+    }
+
+    .hero-texto-content span {
+        font-size: var(--text-xm);
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons a {
+        padding: 10px;
+        border: 2px solid var(--border-dark);
+        border-radius: var(--radius-2xl);
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--slate-300);
+        background: var(--blue-600);
+        box-shadow: var(--shadow-lg);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        font-weight: 500;
+    }
 }
 
-.price-container{
+.price-container {
     background: var(--blue-900);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px;
+    margin: 0 auto;
 }
 
-.item-price-content{
-    
+@media (max-width: 500px) {
+    .form-container, .price-container, .card-container{
+        padding: 20px 0;
+    } 
+    .company-slide-container h3{
+        display: none;
+    }
+    .company-slide-content img{
+        height: 50px;
+    }
+    .hero-texto-content h2{
+        font-size: var(--text-3xl)
+    }
+    .hero-buttons{
+       display: none;
+    }
+    .hero-texto-content span {
+        display: none;
+    }
+    .card-item {
+        width: 250px;
+    }
+    .item-price-content{
+        padding: 20px;
+    }
+    .form-container{
+        padding: 10px;
+    }
+
+
+}
+
+.item-price-content {
     display: flex;
     flex-direction: row;
     gap: 20px;
     justify-content: center;
     align-items: center;
-
+    width: 1200px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
 }
-.item-price{
+
+.item-price {
     width: 300px;
     height: 600px;
     border: 2px solid var(--border-dark);
@@ -642,14 +732,16 @@ main {
     flex-direction: column;
     justify-content: space-between;
 }
-.item-prece-header{
+
+.item-prece-header {
     height: 50%;
     border-bottom: 0.5px solid var(--border-dark);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.item-price-body{
+
+.item-price-body {
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -657,12 +749,14 @@ main {
     align-items: center;
 
 }
-.item-price img{
+
+.item-price img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
-.item-price-title{
+
+.item-price-title {
     color: var(--slate-300);
     border-bottom: 2px solid var(--border-dark);
     font-size: var(--text-xl);
@@ -671,20 +765,24 @@ main {
     font-weight: bold;
     margin: 10px;
 }
-.item-price-price{
+
+.item-price-price {
     color: var(--blue-900);
     font-size: var(--text-2xl);
     font-weight: bold;
     padding: 10px 20px;
 }
-.item-price-body ul{
+
+.item-price-body ul {
     color: var(--slate-300);
     list-style: square;
 }
-.item-price-body ul li{
+
+.item-price-body ul li {
     padding: 10px;
 }
-.item-price-body a{
+
+.item-price-body a {
     border: 2px solid var(--primary);
     border-radius: var(--radius-2xl);
     padding: 10px 20px;
@@ -696,7 +794,8 @@ main {
     box-shadow: var(--shadow-primary);
     transition: all 0.3s ease;
 }
-.item-price-body a:hover{
+
+.item-price-body a:hover {
     border: 2px solid var(--primary-hover);
     color: var(--background-dark);
     background: var(--primary-hover);
@@ -773,7 +872,99 @@ footer {
     color: #63b3ed;
 }
 
+@keyframes menuDrop {
+    0% {
+        transform: translateY(-30px) rotateX(90deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0) rotateX(0);
+        opacity: 1;
+    }
+}
+
 @media (max-width: 768px) {
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(11, 17, 32, 0.95);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        opacity: 0;
+        z-index: 1000;
+        box-shadow: var(--shadow-lg);
+        border-top: 1px solid var(--border-dark);
+        border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    }
+
+    nav ul li {
+        opacity: 0;
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+        transform: translateY(-30px) rotateX(90deg);
+    }
+
+    #menu-toggle:checked~ul {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #menu-toggle:checked~ul li {
+        animation: menuDrop 0.4s ease-out forwards;
+    }
+
+    #menu-toggle:checked~ul li:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    #menu-toggle:checked~ul li:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    #menu-toggle:checked~ul li:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    #menu-toggle:checked~ul li:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+
+    nav ul li a {
+        padding: 15px 20px;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .btn-contacto {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .card-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .form {
+        padding: 10px;
+    }
+
     .footer-content {
         flex-direction: column;
         align-items: center;
@@ -790,7 +981,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: var(--space-20);
+    padding: 6rem 3rem;
     background: linear-gradient(135deg, var(--background-dark) 0%, var(--card-dark) 100%);
     min-height: 100vh;
 }
@@ -801,7 +992,7 @@ footer {
     background: var(--card-dark);
     border: 1px solid var(--border-dark);
     border-radius: var(--radius-3xl);
-    padding: var(--space-12);
+    padding: 30px;
     box-shadow: var(--shadow-2xl);
     backdrop-filter: blur(10px);
 }
@@ -867,11 +1058,9 @@ footer {
     border-color: var(--primary-hover);
 }
 
-/* ============================================
-   EFECTOS DE APARICIÓN (Nuevos)
-   ============================================ */
 
-/* Estado inicial - elementos ocultos */
+
+
 .fade-in,
 .slide-up,
 .slide-left,
@@ -882,7 +1071,7 @@ footer {
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Fade In - Aparecer gradualmente */
+
 .fade-in {
     transform: translateY(20px);
 }
@@ -892,7 +1081,7 @@ footer {
     transform: translateY(0);
 }
 
-/* Slide Up - Deslizar desde abajo */
+
 .slide-up {
     transform: translateY(60px);
 }
@@ -902,7 +1091,7 @@ footer {
     transform: translateY(0);
 }
 
-/* Slide Left - Deslizar desde la derecha */
+
 .slide-left {
     transform: translateX(60px);
 }
@@ -912,7 +1101,7 @@ footer {
     transform: translateX(0);
 }
 
-/* Slide Right - Deslizar desde la izquierda */
+
 .slide-right {
     transform: translateX(-60px);
 }
@@ -922,7 +1111,7 @@ footer {
     transform: translateX(0);
 }
 
-/* Zoom In - Aparecer con zoom */
+
 .zoom-in {
     transform: scale(0.8);
 }
@@ -932,7 +1121,7 @@ footer {
     transform: scale(1);
 }
 
-/* Flip In - Efecto de volteo */
+
 .flip-in {
     transform: perspective(1000px) rotateY(-20deg);
 }
@@ -942,9 +1131,23 @@ footer {
     transform: perspective(1000px) rotateY(0);
 }
 
-/* Delays para animaciones escalonadas */
-.delay-100 { transition-delay: 100ms; }
-.delay-200 { transition-delay: 200ms; }
-.delay-300 { transition-delay: 300ms; }
-.delay-400 { transition-delay: 400ms; }
-.delay-500 { transition-delay: 500ms; }
+
+.delay-100 {
+    transition-delay: 100ms;
+}
+
+.delay-200 {
+    transition-delay: 200ms;
+}
+
+.delay-300 {
+    transition-delay: 300ms;
+}
+
+.delay-400 {
+    transition-delay: 400ms;
+}
+
+.delay-500 {
+    transition-delay: 500ms;
+}
