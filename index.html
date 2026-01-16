@@ -13,10 +13,11 @@
 <body>
     <!-- cabezera -->
     <header>
-        <nav>
+        <a href="#main" class="skip-link">Saltar al contenido principal</a>
+        <nav role="navigation">
             <div class="nav-logo">
                 <a href="">
-                    <img src="assets/img/logo.png" alt="logo tecjasa">
+                    <img src="assets/img/logo.png" alt="Logo de TECJASA">
                     <span>TECJASA</span>
                 </a>
             </div>
@@ -24,52 +25,52 @@
             <label for="menu-toggle" class="hamburger-menu" aria-label="Toggle menu">
                 <ion-icon name="menu-outline"></ion-icon>
             </label>
-            <ul>
+            <ul aria-label="Menú principal">
                 <li><a href="#">INICIO</a></li>
-                <li><a href="#">PRODUCTOS</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
                 <li><a href="#">SERVICIOS</a></li>
                 <li><a href="#">NOTICIAS</a></li>
             </ul>
-            <a href="#" class="btn-contacto">CONTACTANOS</a>
+            <a href="#" class="btn btn-primary btn-lg">CONTÁCTANOS</a>
 
         </nav>
     </header>
     <!-- principal -->
-    <main>
-        <div class="hero-container">
-            <img src="assets/img/hero-background.jpg" alt="">
+    <main id="main">
+        <section class="hero-container">
+            <img src="assets/img/hero-background.jpg" alt="Imagen de fondo mostrando soluciones tecnológicas para negocios">
             <div class="hero-texto-content">
                 <h2 class="slide-up delay-200">Tecjasa soluciones inteligentes para tu negocio</h2>
-                <span class="slide-up delay-300">Somos una solucion tecnologica integral que brinda servicios y productos de alta calidad para
+                <span class="slide-up delay-300">Somos una solución tecnológica integral que brinda servicios y productos de alta calidad para
                     optimizar y potenciar tu empresa.</span>
                 <div class="hero-buttons">
-                    <a href="#">explorar productos</a>
-                    <a href="#">explorar servicios</a>
+                    <a href="#" class="btn btn-primary btn-md">explorar productos</a>
+                    <a href="#" class="btn btn-primary btn-md">explorar servicios</a>
                 </div>
             </div>
-        </div>
-        <div class="company-slide-container">
-            <h3>Empresas que confian en nosotros</h3>
+        </section>
+        <section class="company-slide-container">
+            <h3>Empresas que confían en nosotros</h3>
             <div class="company-slide-content">
-                <img src="assets/img/company1.jpg" alt="copmañia 1">
-                <img src="assets/img/company2.jpg" alt="copmañia 2">
-                <img src="assets/img/company3.jpg" alt="copmañia 3">
-                <img src="assets/img/company4.jpg" alt="copmañia 4">
-                <img src="assets/img/company5.png" alt="copmañia 5">
-                <img src="assets/img/company6.jpg" alt="copmañia 6">
+                <img src="assets/img/company1.jpg" alt="Logo de empresa 1">
+                <img src="assets/img/company2.jpg" alt="Logo de empresa 2">
+                <img src="assets/img/company3.jpg" alt="Logo de empresa 3">
+                <img src="assets/img/company4.jpg" alt="Logo de empresa 4">
+                <img src="assets/img/company5.png" alt="Logo de empresa 5">
+                <img src="assets/img/company6.jpg" alt="Logo de empresa 6">
             </div>
 
-        </div>
-        <div class="card-container">
+        </section>
+        <section class="card-container">
             <div class="card-header slide-up delay-200">
                 <h3>Nuestros Productos</h3>
                 <p>nuestros productos son confiables</p>
-                <a href="#">ver mas</a>
+                <a href="#" class="btn btn-primary">ver mas</a>
             </div>
             <div class="card-content">
                 <div class="card-item slide-up delay-300">
                     <div class="item-header">
-                        <img src="assets/img/producto1.png" alt="">
+                        <img src="assets/img/producto1.png" alt="Icono representativo del Sistema Empresarial">
                     </div>
                     <div class="item-body">
                         <div class="item-title-header">
@@ -79,7 +80,7 @@
                         <div class="item-check">
                             <div class="item-check-block">
                                 <ion-icon name="checkmark-outline"></ion-icon>
-                                <span>rapido</span>
+                                <span>rápido</span>
                             </div>
                             <div class="item-check-block">
                                 <ion-icon name="checkmark-outline"></ion-icon>
@@ -87,7 +88,7 @@
                             </div>
                             <div class="item-check-block">
                                 <ion-icon name="checkmark-outline"></ion-icon>
-                                <span>economico</span>
+                                <span>económico</span>
                             </div>
                         </div>
                         <a href="" class="btn card">ver mas</a>
@@ -105,7 +106,7 @@
                         <div class="item-check">
                             <div class="item-check-block">
                                 <ion-icon name="checkmark-outline"></ion-icon>
-                                <span>rapido</span>
+                                <span>rápido</span>
                             </div>
                             <div class="item-check-block">
                                 <ion-icon name="checkmark-outline"></ion-icon>
@@ -113,7 +114,7 @@
                             </div>
                             <div class="item-check-block">
                                 <ion-icon name="checkmark-outline"></ion-icon>
-                                <span>economico</span>
+                                <span>económico</span>
                             </div>
                         </div>
                         <a href="" class="btn card">ver mas</a>
@@ -147,12 +148,12 @@
                 </div>
 
             </div>
-        </div>
-        <div class="price-container">
+        </section>
+        <section class="price-container">
             <div class="card-header slide-up delay-200">
                 <h3>Nuestros planes</h3>
-                <p>nuestros planes son mas accesibles</p>
-                <a href="#">ver mas</a>
+                <p>nuestros planes son más accesibles</p>
+                <a href="#" class="btn btn-primary">ver mas</a>
             </div>
             <div class="item-price-content">
                 <div class="item-price slide-up delay-100">
@@ -165,10 +166,10 @@
                     </div>
                     <div class="item-price-body">
                         <ul>
-                            <li>Caracteristica 1</li>
-                            <li>Caracteristica 2</li>
-                            <li>Caracteristica 3</li>
-                            <li>Caracteristica 4</li>
+                            <li>Característica 1</li>
+                            <li>Característica 2</li>
+                            <li>Característica 3</li>
+                            <li>Característica 4</li>
                         </ul>
                         <a href="#" class="btn-price">contratar</a>
                     </div>
@@ -183,10 +184,10 @@
                     </div>
                     <div class="item-price-body">
                         <ul>
-                            <li>Caracteristica 1</li>
-                            <li>Caracteristica 2</li>
-                            <li>Caracteristica 3</li>
-                            <li>Caracteristica 4</li>
+                            <li>Característica 1</li>
+                            <li>Característica 2</li>
+                            <li>Característica 3</li>
+                            <li>Característica 4</li>
                         </ul>
                         <a href="#" class="btn-price">contratar</a>
                     </div>
@@ -201,10 +202,10 @@
                     </div>
                     <div class="item-price-body">
                         <ul>
-                            <li>Caracteristica 1</li>
-                            <li>Caracteristica 2</li>
-                            <li>Caracteristica 3</li>
-                            <li>Caracteristica 4</li>
+                            <li>Característica 1</li>
+                            <li>Característica 2</li>
+                            <li>Característica 3</li>
+                            <li>Característica 4</li>
                         </ul>
                         <a href="#" class="btn-price">contratar</a>
                     </div>
@@ -219,65 +220,69 @@
                     </div>
                     <div class="item-price-body">
                         <ul>
-                            <li>Caracteristica 1</li>
-                            <li>Caracteristica 2</li>
-                            <li>Caracteristica 3</li>
-                            <li>Caracteristica 4</li>
+                            <li>Característica 1</li>
+                            <li>Característica 2</li>
+                            <li>Característica 3</li>
+                            <li>Característica 4</li>
                         </ul>
                         <a href="#" class="btn-price">contratar</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="services-container">
+        </section>
+        <section class="services-container">
             <div class="card-header slide-up delay-200">
                 <h3>Nuestros Servicios</h3>
                 <p>nuestros servicios son de alta calidad</p>
-                <a href="#">ver mas</a>
+                <a href="#" class="btn btn-primary">ver mas</a>
             </div>
             <div class="item-services-content">
                 <div class="item-service slide-up delay-100 text-left" style="background-image: url('assets/img/producto1.png');">
                     <div class="item-service-overlay">
                         <h3>Servicio de Consultoría</h3>
                         <p>Ofrecemos consultoría especializada para optimizar tus procesos empresariales y mejorar la eficiencia operativa. Nuestro equipo de expertos te guiará en la toma de decisiones estratégicas.</p>
-                        <a href="#" class="btn-service">Saber más</a>
+                        <a href="#" class="btn btn-primary">Saber más</a>
                     </div>
                 </div>
                 <div class="item-service slide-up delay-200 text-right" style="background-image: url('assets/img/producto1.png');">
                     <div class="item-service-overlay">
                         <h3>Desarrollo de Software</h3>
                         <p>Creamos soluciones software a medida para tu empresa, adaptadas a tus necesidades específicas. Desde aplicaciones web hasta sistemas integrados, garantizamos calidad y innovación.</p>
-                        <a href="#" class="btn-service">Saber más</a>
+                        <a href="#" class="btn btn-primary">Saber más</a>
                     </div>
                 </div>
                 <div class="item-service slide-up delay-300 text-left" style="background-image: url('assets/img/producto1.png');">
                     <div class="item-service-overlay">
                         <h3>Soporte Técnico</h3>
                         <p>Brindamos soporte técnico continuo para mantener tus sistemas funcionando de manera óptima. Resolvemos problemas rápidamente y ofrecemos mantenimiento preventivo.</p>
-                        <a href="#" class="btn-service">Saber más</a>
+                        <a href="#" class="btn btn-primary">Saber más</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="form-container ">
+        </section>
+        <section class="form-container">
             <form action="" class="form slide-up delay-200">
                 <div class="form-header">
-                    <h3>Contactanos para mas información</h3>
+                    <h3>Contáctanos para más información</h3>
                     <p>Rellena el formulario y nos pondremos en contacto contigo lo antes posible.</p>
                 </div>
                 
-                <div class="form-content">
-                    <input type="text" placeholder="Nombre completo" required>
-                    <input type="email" placeholder="Correo electrónico" required>
-                    <input type="tel" placeholder="Número de teléfono" required>
-                    <textarea placeholder="Mensaje" required></textarea>
+                <div class="form-content form-primary">
+                    <label for="name" class="form-label visually-hidden">Nombre completo</label>
+                    <input type="text" id="name" class="form-input" placeholder="Nombre completo" required>
+                    <label for="email" class="form-label visually-hidden">Correo electrónico</label>
+                    <input type="email" id="email" class="form-input" placeholder="Correo electrónico" required>
+                    <label for="phone" class="form-label visually-hidden">Número de teléfono</label>
+                    <input type="tel" id="phone" class="form-input" placeholder="Número de teléfono" required>
+                    <label for="message" class="form-label visually-hidden">Mensaje</label>
+                    <textarea id="message" class="form-textarea" placeholder="Mensaje" required></textarea>
                 </div>
                 <br>
-                <a href="" class="btn card">enviar</a>
+                <a href="" class="btn btn-primary">enviar</a>
             
 
             </form>
-        </div>
+        </section>
 
 
     </main>
@@ -307,6 +312,14 @@
         </div>
 
     </footer>
+    <div class="floating-buttons">
+        <button class="btn-floating btn-scroll-top" aria-label="Subir arriba" style="display: none;">
+            <ion-icon name="chevron-up-outline"></ion-icon>
+        </button>
+        <button class="btn-floating btn-whatsapp" aria-label="Contactar por WhatsApp">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+        </button>
+    </div>
     <script src="script.js"></script>
 </body>
 

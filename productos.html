@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - TECJASA</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!-- cabezera -->
+    <header>
+        <a href="#main" class="skip-link">Saltar al contenido principal</a>
+        <nav role="navigation">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="Logo de TECJASA">
+                    <span>TECJASA</span>
+                </a>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger-menu" aria-label="Toggle menu">
+                <ion-icon name="menu-outline"></ion-icon>
+            </label>
+            <ul aria-label="Menú principal">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="#">SERVICIOS</a></li>
+                <li><a href="#">NOTICIAS</a></li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-lg">CONTÁCTANOS</a>
+
+        </nav>
+    </header>
+    <!-- principal -->
+    <main id="main">
+        <section class="hero-container">
+            <img src="assets/img/hero-background.jpg" alt="Imagen de fondo mostrando soluciones tecnológicas para negocios">
+            <div class="hero-texto-content">
+                <h1 class="hero-title slide-up delay-200">Productos</h1>
+                <h2 class="hero-subtitle slide-up delay-200">Nuestros Productos</h2>
+            </div>
+        </section>
+
+        <!-- Slider Section -->
+        <section class="slider-container">
+            <h3 class="slider-title">Productos Destacados</h3>
+            <div class="slider">
+                <button class="prev-btn" aria-label="Producto anterior"><</button>
+                <div class="slider-track">
+                    <div class="slide-card">
+                        <div class="slide-image">
+                            <img src="assets/img/producto1.png" alt="Sistema Empresarial">
+                        </div>
+                        <div class="slide-content">
+                            <h4 class="slide-title">Sistema Empresarial</h4>
+                            <p class="slide-description">Sistema completo para gestión empresarial, rápido y seguro.</p>
+                            <p class="slide-price">400 Bs</p>
+                            <a href="#" class="slide-btn">Ver Más</a>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <div class="slide-image">
+                            <img src="assets/img/producto1.png" alt="Sistema de Inventario">
+                        </div>
+                        <div class="slide-content">
+                            <h4 class="slide-title">Sistema de Inventario</h4>
+                            <p class="slide-description">Controla tu inventario de manera eficiente y precisa.</p>
+                            <p class="slide-price">350 Bs</p>
+                            <a href="#" class="slide-btn">Ver Más</a>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <div class="slide-image">
+                            <img src="assets/img/producto1.png" alt="Computadora Empresarial">
+                        </div>
+                        <div class="slide-content">
+                            <h4 class="slide-title">Computadora Empresarial</h4>
+                            <p class="slide-description">Equipo de alta performance para el trabajo diario.</p>
+                            <p class="slide-price">2500 Bs</p>
+                            <a href="#" class="slide-btn">Ver Más</a>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <div class="slide-image">
+                            <img src="assets/img/producto1.png" alt="Consultoría TI">
+                        </div>
+                        <div class="slide-content">
+                            <h4 class="slide-title">Consultoría TI</h4>
+                            <p class="slide-description">Asesoría especializada en tecnologías de la información.</p>
+                            <p class="slide-price">500 Bs</p>
+                            <a href="#" class="slide-btn">Ver Más</a>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <div class="slide-image">
+                            <img src="assets/img/producto1.png" alt="Software de Contabilidad">
+                        </div>
+                        <div class="slide-content">
+                            <h4 class="slide-title">Software de Contabilidad</h4>
+                            <p class="slide-description">Herramienta completa para gestión financiera.</p>
+                            <p class="slide-price">450 Bs</p>
+                            <a href="#" class="slide-btn">Ver Más</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="next-btn" aria-label="Siguiente producto">></button>
+            </div>
+        </section>
+
+        <!-- Products Grid Section -->
+        <section class="products-container">
+            <div class="card-header slide-up delay-200">
+                <h3>Todos los Productos</h3>
+                <p>Encuentra el producto perfecto para tu empresa</p>
+            </div>
+            <div class="filter-bar">
+                <div class="filter-item">
+                    <label for="search-input">Buscar:</label>
+                    <input type="text" id="search-input" placeholder="Buscar productos...">
+                </div>
+                <div class="filter-item">
+                    <label for="category-select">Categoría:</label>
+                    <select id="category-select">
+                        <option value="all">Todas</option>
+                        <option value="software">Software</option>
+                        <option value="hardware">Hardware</option>
+                        <option value="servicios">Servicios</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="price-select">Precio:</label>
+                    <select id="price-select">
+                        <option value="all">Todos</option>
+                        <option value="low">Bajo (< 400 Bs)</option>
+                        <option value="mid">Medio (400-2000 Bs)</option>
+                        <option value="high">Alto (> 2000 Bs)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="products-grid" id="products-grid">
+                <div class="product-card" data-category="software" data-price="mid">
+                    <img src="assets/img/producto1.png" alt="Sistema Empresarial">
+                    <div class="product-body">
+                        <h3 class="product-title">Sistema Empresarial <span class="product-price">400 Bs</span></h3>
+                        <p class="product-description">Sistema completo para gestión empresarial, rápido y seguro.</p>
+                        <a href="#" class="product-btn">Ver Más</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="software" data-price="low">
+                    <img src="assets/img/producto1.png" alt="Sistema de Inventario">
+                    <div class="product-body">
+                        <h3 class="product-title">Sistema de Inventario <span class="product-price">350 Bs</span></h3>
+                        <p class="product-description">Controla tu inventario de manera eficiente y precisa.</p>
+                        <a href="#" class="product-btn">Ver Más</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="hardware" data-price="high">
+                    <img src="assets/img/producto1.png" alt="Computadora Empresarial">
+                    <div class="product-body">
+                        <h3 class="product-title">Computadora Empresarial <span class="product-price">2500 Bs</span></h3>
+                        <p class="product-description">Equipo de alta performance para el trabajo diario.</p>
+                        <a href="#" class="product-btn">Ver Más</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="servicios" data-price="mid">
+                    <img src="assets/img/producto1.png" alt="Consultoría TI">
+                    <div class="product-body">
+                        <h3 class="product-title">Consultoría TI <span class="product-price">500 Bs</span></h3>
+                        <p class="product-description">Asesoría especializada en tecnologías de la información.</p>
+                        <a href="#" class="product-btn">Ver Más</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="software" data-price="low">
+                    <img src="assets/img/producto1.png" alt="Software de Contabilidad">
+                    <div class="product-body">
+                        <h3 class="product-title">Software de Contabilidad <span class="product-price">450 Bs</span></h3>
+                        <p class="product-description">Herramienta completa para gestión financiera.</p>
+                        <a href="#" class="product-btn">Ver Más</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="hardware" data-price="high">
+                    <img src="assets/img/producto1.png" alt="Servidor Dedicado">
+                    <div class="product-body">
+                        <h3 class="product-title">Servidor Dedicado <span class="product-price">5000 Bs</span></h3>
+                        <p class="product-description">Servidor potente para aplicaciones críticas.</p>
+                        <a href="#" class="product-btn">Ver Más</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="servicios" data-price="low">
+                    <img src="assets/img/producto1.png" alt="Mantenimiento de Sistemas">
+                    <div class="product-body">
+                        <h3 class="product-title">Mantenimiento de Sistemas <span class="product-price">300 Bs</span></h3>
+                        <p class="product-description">Servicio de mantenimiento preventivo y correctivo.</p>
+                        <a href="#" class="product-btn">Ver Más</a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="software" data-price="mid">
+                    <img src="assets/img/producto1.png" alt="Aplicación Móvil">
+                    <div class="product-body">
+                        <h3 class="product-title">Aplicación Móvil <span class="product-price">800 Bs</span></h3>
+                        <p class="product-description">Desarrollo de apps móviles para tu negocio.</p>
+                        <a href="#" class="product-btn">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+            <div id="no-products-message" style="display: none;">
+                <p>No hay productos registrados en esta categoría.</p>
+            </div>
+        </section>
+    </main>
+    <!-- pie de pagina -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-item">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Noticias</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+            <div class="footer-item">
+                <h3>Contacto</h3>
+                <p>Dirección: Calle siempreviva</p>
+                <p>Teléfono: 5237890</p>
+                <p>Correo: tecjasa@tec.com</p>
+            </div>
+        </div>
+
+    </footer>
+    <div class="floating-buttons">
+        <button class="btn-floating btn-scroll-top" aria-label="Subir arriba" style="display: none;">
+            <ion-icon name="chevron-up-outline"></ion-icon>
+        </button>
+        <button class="btn-floating btn-whatsapp" aria-label="Contactar por WhatsApp">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+        </button>
+    </div>
+    <script src="script.js"></script>
+    <script src="productos.js"></script>
+</body>
+
+</html>
