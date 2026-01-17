@@ -35,17 +35,47 @@
 
         </nav>
     </header>
-    <!-- principal -->
+        <!-- principal -->
     <main id="main">
-        <section class="hero-container">
-            <img src="assets/img/hero-background.jpg" alt="Imagen de fondo mostrando soluciones tecnológicas para negocios">
-            <div class="hero-texto-content">
-                <h2 class="slide-up delay-200">Tecjasa soluciones inteligentes para tu negocio</h2>
-                <span class="slide-up delay-300">Somos una solución tecnológica integral que brinda servicios y productos de alta calidad para
-                    optimizar y potenciar tu empresa.</span>
-                <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary btn-md">explorar productos</a>
-                    <a href="#" class="btn btn-primary btn-md">explorar servicios</a>
+        <section class="hero-wrapper">
+            <div class="hero-container">
+                <img src="assets/img/company1.jpg" alt="Imagen de empresa 1">
+                <div class="hero-texto-content">
+                    <h2>Soluciones Tecnológicas Avanzadas</h2>
+                    <span>Ofrecemos soluciones innovadoras para impulsar tu negocio al siguiente nivel.</span>
+                    <div class="hero-buttons">
+                        <a href="productos.html" class="btn btn-primary btn-md">ver productos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-container">
+                <img src="assets/img/company2.jpg" alt="Imagen de empresa 2">
+                <div class="hero-texto-content">
+                    <h2>Consultoría Profesional</h2>
+                    <span>Nuestro equipo de expertos te guía en la transformación digital de tu empresa.</span>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary btn-md">contactar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-container">
+                <img src="assets/img/company3.jpg" alt="Imagen de empresa 3">
+                <div class="hero-texto-content">
+                    <h2>Desarrollo de Software</h2>
+                    <span>Creamos aplicaciones personalizadas que se adaptan a tus necesidades específicas.</span>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary btn-md">saber más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-container">
+                <img src="assets/img/company4.jpg" alt="Imagen de empresa 4">
+                <div class="hero-texto-content">
+                    <h2>Soporte Técnico 24/7</h2>
+                    <span>Garantizamos el funcionamiento óptimo de tus sistemas con soporte continuo.</span>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary btn-md">explorar</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -312,9 +342,54 @@
         </div>
 
     </footer>
+    <!-- Theme Controller Panel -->
+    <div id="theme-panel" class="theme-panel" style="display: none;">
+        <div class="theme-panel-header">
+            <h4>Cambiar Tema</h4>
+            <button class="theme-panel-close" aria-label="Cerrar panel de temas">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+        </div>
+        <div class="theme-panel-content">
+            <div class="theme-option">
+                <input type="radio" id="theme-default" name="theme" value="default" checked>
+                <label for="theme-default">
+                    <span class="theme-name">Tema Original</span>
+                    <span class="theme-preview">
+                        <span class="color-swatch" style="background: #FFB300;"></span>
+                        <span class="color-swatch" style="background: #0B1120;"></span>
+                    </span>
+                </label>
+            </div>
+            <div class="theme-option">
+                <input type="radio" id="theme-green" name="theme" value="green">
+                <label for="theme-green">
+                    <span class="theme-name">Tema Verde</span>
+                    <span class="theme-preview">
+                        <span class="color-swatch" style="background: #49A078;"></span>
+                        <span class="color-swatch" style="background: #1F2421;"></span>
+                    </span>
+                </label>
+            </div>
+            <div class="theme-option">
+                <input type="radio" id="theme-cyan" name="theme" value="cyan">
+                <label for="theme-cyan">
+                    <span class="theme-name">Tema Cian</span>
+                    <span class="theme-preview">
+                        <span class="color-swatch" style="background: #5BC0BE;"></span>
+                        <span class="color-swatch" style="background: #0B132B;"></span>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+
     <div class="floating-buttons">
         <button class="btn-floating btn-scroll-top" aria-label="Subir arriba" style="display: none;">
             <ion-icon name="chevron-up-outline"></ion-icon>
+        </button>
+        <button class="btn-floating btn-theme-toggle" aria-label="Cambiar tema">
+            <ion-icon name="color-palette-outline"></ion-icon>
         </button>
         <button class="btn-floating btn-whatsapp" aria-label="Contactar por WhatsApp">
             <ion-icon name="logo-whatsapp"></ion-icon>

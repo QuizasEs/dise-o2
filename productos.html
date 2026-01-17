@@ -238,9 +238,54 @@
         </div>
 
     </footer>
+    <!-- Theme Controller Panel -->
+    <div id="theme-panel" class="theme-panel" style="display: none;">
+        <div class="theme-panel-header">
+            <h4>Cambiar Tema</h4>
+            <button class="theme-panel-close" aria-label="Cerrar panel de temas">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+        </div>
+        <div class="theme-panel-content">
+            <div class="theme-option">
+                <input type="radio" id="theme-default" name="theme" value="default" checked>
+                <label for="theme-default">
+                    <span class="theme-name">Tema Original</span>
+                    <span class="theme-preview">
+                        <span class="color-swatch" style="background: #FFB300;"></span>
+                        <span class="color-swatch" style="background: #0B1120;"></span>
+                    </span>
+                </label>
+            </div>
+            <div class="theme-option">
+                <input type="radio" id="theme-green" name="theme" value="green">
+                <label for="theme-green">
+                    <span class="theme-name">Tema Verde</span>
+                    <span class="theme-preview">
+                        <span class="color-swatch" style="background: #49A078;"></span>
+                        <span class="color-swatch" style="background: #1F2421;"></span>
+                    </span>
+                </label>
+            </div>
+            <div class="theme-option">
+                <input type="radio" id="theme-cyan" name="theme" value="cyan">
+                <label for="theme-cyan">
+                    <span class="theme-name">Tema Cian</span>
+                    <span class="theme-preview">
+                        <span class="color-swatch" style="background: #5BC0BE;"></span>
+                        <span class="color-swatch" style="background: #0B132B;"></span>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+
     <div class="floating-buttons">
         <button class="btn-floating btn-scroll-top" aria-label="Subir arriba" style="display: none;">
             <ion-icon name="chevron-up-outline"></ion-icon>
+        </button>
+        <button class="btn-floating btn-theme-toggle" aria-label="Cambiar tema">
+            <ion-icon name="color-palette-outline"></ion-icon>
         </button>
         <button class="btn-floating btn-whatsapp" aria-label="Contactar por WhatsApp">
             <ion-icon name="logo-whatsapp"></ion-icon>
